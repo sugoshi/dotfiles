@@ -33,6 +33,10 @@ set wrap           " 折り返し表示
 "set timeoutlen=100
 "set ttimeoutlen=10
 
+" Graphic setting of VimShell
+let g:vimshell_prompt_expr = 'getcwd()." > "'
+let g:vimshell_prompt_pattern = '^\f\+ > '
+
 "-----------------------
 " カーソル移動関連の設定
 "-----------------------

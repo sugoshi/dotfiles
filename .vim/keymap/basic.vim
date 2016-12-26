@@ -22,3 +22,6 @@ nnoremap sJ <C-w>J
 nnoremap sK <C-w>K
 nnoremap sL <C-w>L
 nnoremap sH <C-w>H
+
+" A shortcut to call VimShell.
+nnoremap sx :<C-u>VimShell<CR>
