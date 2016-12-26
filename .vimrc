@@ -3,42 +3,35 @@ if has("syntax")
 	syntax on
 endif
 
+source ~/.vim/myscripts/pluginlist.vim
+source ~/.vim/keymap/basic.vim
+colorscheme molokai
+
 "---------------
 " 画面表示の設定
 "---------------
 
 set number         " 行番号を表示する
 set cmdheight=2    " メッセージ表示欄を2行確保
-set cursorline     " カーソル行の背景色を変える
+set nocursorline     " カーソル行の背景色を変える
 
-"set cursorcolumn   " カーソル位置のカラムの背景色を変える
-"カーソル上の文字色
-"highlight CursorColumn ctermfg=Black
+set nocursorcolumn   " カーソル位置のカラムの背景色を変える
 
 set laststatus=2   " ステータス行を常に表示
+set statusline=%f%m%r%h%w\%=%y\[%{&ff}]\[%{&fileencoding}]\[L:%l/%L]
+
 set list           " 不可視文字を表示
 " 不可視文字の表示記号指定
-"set listchars=tab:>-,eol:↲,extends:❯,precedes:❮
-set listchars=tab:>-,eol:$,extends:❯,precedes:❮
+set listchars=tab:>\ ,trail:-,eol:$,extends:❯,precedes:❮,nbsp:-
 
 set ruler          " 行・列番号を表示
 set showcmd        " 入力中のコマンドをステータスに表示
 "set showmatch      " 対応する括弧を強調表示
 
-" ステータスバーに文字コードと改行コードを表示
-"set statusline=%<%f\
-"%m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P
-"set statusline=%<%f\ %m%r%h%w%{‘[‘.(&fenc!=”?&fenc:&enc).’][‘.&ff.’]’}%=%l,%c%V%8P
-
 set helpheight=999 " ヘルプを画面いっぱいに開く
 set wrap           " 折り返し表示
-
-" 全角スペースの表示
-highlight ZenkakuSpace cterm=underline ctermfg=lightblue guibg=darkgray
-match ZenkakuSpace /　/
-
-highlight Comment ctermfg=yellow
-highlight PreProc ctermfg=blue
+"set timeoutlen=100
+"set ttimeoutlen=10
 
 "-----------------------
 " カーソル移動関連の設定
@@ -55,17 +48,20 @@ set sidescroll=1               " 左右スクロールは一文字づつ行う
 "-----------------------
 
 set autoread   "外部でファイルに変更がされた場合は読みなおす
+set confirm    " 保存されていないファイルがあるときは終了前に保存確認
+set hidden     " 保存されていないファイルがあるときでも別のファイルを開くことが出来る
+"set writebackup " ファイル上書き前にバックアップ作成。成功後削除される
+
 set nobackup   " ファイル保存時にバックアップファイルを作らない
 "set backupdir=~/vim.backup
 
-set confirm    " 保存されていないファイルがあるときは終了前に保存確認
-
-" スワップファイル作成先
-"set directory=~/swap
-
-set hidden     " 保存されていないファイルがあるときでも別のファイルを開くことが出来る
 set noswapfile " ファイル編集中にスワップファイルを作らない
-"set writebackup " ファイル上書き前にバックアップ作成。成功後削除される
+"set directory=~/swap " スワップファイル作成先
+
+set viminfo= " 履歴情報などの保存先
+
+set noundofile " アンドゥファイルを作らない
+"set undodir=
 
 "----------------
 " 検索/置換の設定
@@ -117,16 +113,3 @@ set history=100
 set visualbell t_vb=
 set noerrorbells "エラーメッセージの表示時にビープを鳴らさない
 
-
-nnoremap ss :<C-u>sp<CR>
-nnoremap sv :<C-u>vs<CR>
-
-nnoremap s <Nop>
-nnoremap sj <C-w>j
-nnoremap sk <C-w>k
-nnoremap sl <C-w>l
-nnoremap sh <C-w>h
-nnoremap sJ <C-w>J
-nnoremap sK <C-w>K
-nnoremap sL <C-w>L
-nnoremap sH <C-w>H
