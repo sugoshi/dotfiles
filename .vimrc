@@ -67,6 +67,9 @@ set viminfo= " 履歴情報などの保存先
 set noundofile " アンドゥファイルを作らない
 "set undodir=
 
+set encoding=utf-8
+set fileformat=unix
+
 "----------------
 " 検索/置換の設定
 "----------------
@@ -98,7 +101,7 @@ set clipboard=unnamed,unnamedplus
 " マウスの入力を受け付ける
 "set mouse=a
 " Windows でもパスの区切り文字を / にする
-"set shellslash
+set shellslash
 " インサートモードから抜けると自動的にIMEをオフにする
 "set iminsert=2
 
