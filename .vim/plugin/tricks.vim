@@ -1,0 +1,1 @@
+command! Reloadrc :source $MYVIMRC

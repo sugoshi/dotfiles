@@ -1,0 +1,66 @@
+
+shell -$SHELL
+startup_message off
+autodetach off
+altscreen off
+defmonitor off
+vbell off
+defscrollback 1000
+
+allpartial off
+shelltitle "$ |bash"
+hardstatus alwayslastline "%L=%-w%46L>%{= gK}*%n %t%{= dd}%+w %= %{= .g}$USER@$HOSTNAME %{= wb}%y/%m/%d(%D) %02c:%s%{-}"
+caption always "%{= gK}%n %t"
+msgwait 3
+msgminwait 1
+verbose on
+
+defutf8 on
+defencoding utf8
+encoding utf8
+crlf off
+
+bind r eval 'source ~/.screenrc' "echo 'read ~/.screenrc'"
+bindkey -k k5 redisplay
+
+bindkey "^j" focus down
+bindkey "^k" focus up
+bindkey "^h" focus top
+bindkey "^l" focus bottom
+
+zombie xc
+bind n colon 'number '
+bind t colon 'title '
+bind w colon 'select '
+bind j focus down
+bind k focus up
+bind h focus top
+bind l focus bottom
+bind . resize +1
+bind , resize -1
+bind > resize +5
+bind < resize -5
+bind = resize =
+bind s split
+bind v split -v
+bind c screen
+bind e colon 'screen -X '
+bind x remove
+bind q quit
+bind Q only
+
+bind s eval 'echo "Operate window"' 'command -c operate'
+bind -c operate ^] command
+bind -c operate j eval 'focus down' 'command -c operate'
+bind -c operate k eval 'focus up' 'command -c operate'
+bind -c operate h eval 'focus top' 'command -c operate'
+bind -c operate l eval 'focus bottom' 'command -c operate'
+bind -c operate . eval 'resize +1' 'command -c operate'
+bind -c operate , eval 'resize -1' 'command -c operate'
+bind -c operate > eval 'resize +5' 'command -c operate'
+bind -c operate < eval 'resize -5' 'command -c operate'
+bind -c operate s eval 'split' 'command -c operate'
+bind -c operate v eval 'split -v' 'command -c operate'
+bind -c operate c eval 'screen' 'command -c operate'
+bind -c operate x eval 'remove' 'command -c operate'
+
