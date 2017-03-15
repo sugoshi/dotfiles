@@ -6,6 +6,7 @@ endif
 source ~/.vim/myscripts/pluginlist.vim
 source ~/.vim/keymap/basic.vim
 colorscheme molokai
+source ~/.vim/colors/yabasic.vim
 
 "---------------
 " 画面表示の設定
@@ -67,8 +68,14 @@ set viminfo= " 履歴情報などの保存先
 set noundofile " アンドゥファイルを作らない
 "set undodir=
 
+"----------------------
+" エンコーディング関連
+"----------------------
 set encoding=utf-8
+set fileencoding=utf-8
+set fileencodings=utf-8,iso-2022-jp,euc-jp,sjis,cp932
 set fileformat=unix
+set fileformats=unix
 
 "----------------
 " 検索/置換の設定

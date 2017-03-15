@@ -2,8 +2,8 @@
 hi ZenkakuSpace cterm=underline ctermfg=lightblue guibg=darkgray
 match ZenkakuSpace /　/
 
-hi Comment ctermfg=yellow
-hi PreProc ctermfg=blue
+hi Comment ctermfg=cyan
+hi PreProc ctermfg=magenta
 hi NonText ctermfg=blue
 hi SpecialKey ctermfg=yellow
 
