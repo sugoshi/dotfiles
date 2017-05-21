@@ -30,7 +30,6 @@ bindkey "^l" focus bottom
 
 zombie xc
 bind n colon 'number '
-bind t colon 'title '
 bind w colon 'select '
 bind j focus down
 bind k focus up
@@ -49,7 +48,7 @@ bind x remove
 bind q quit
 bind Q only
 
-bind s eval 'echo "Operate window"' 'command -c operate'
+bind t eval 'echo "Operate window"' 'command -c operate'
 bind -c operate ^] command
 bind -c operate j eval 'focus down' 'command -c operate'
 bind -c operate k eval 'focus up' 'command -c operate'

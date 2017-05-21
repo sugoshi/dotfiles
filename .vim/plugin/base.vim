@@ -1,6 +1,8 @@
-set nocompatible " viとの互換性をとらない(vim独自拡張)
-if has("syntax")
-	syntax on
+set encoding=utf-8
+scriptencoding=utf-8
+
+if &compatible
+	set nocompatible " viとの互換性をとらない(vim独自拡張)
 endif
 
 "---------------
@@ -136,3 +138,4 @@ set history=100
 "ビープ音すべてを無効にする
 set visualbell t_vb=
 set noerrorbells "エラーメッセージの表示時にビープを鳴らさない
+

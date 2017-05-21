@@ -1,10 +1,11 @@
+let g:colors_name = expand('<sfile>:t:r')
+
 set background=dark
 
 " 全角スペースの表示
 hi ZenkakuSpace cterm=underline ctermfg=lightblue guibg=darkgray
 match ZenkakuSpace /　/
 
-colorscheme molokai
 hi Comment ctermfg=cyan
 hi NonText ctermfg=blue
 hi PreProc ctermfg=magenta

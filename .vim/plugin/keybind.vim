@@ -1,4 +1,3 @@
-nnoremap <C-r> :<C-u>source $MYVIMRC<CR>:echo 'read vimrc'<CR>
 nnoremap o o<ESC>
 nnoremap O O<ESC>
 nnoremap t 0i<TAB><ESC>
@@ -7,8 +6,9 @@ nnoremap T 0x
 nnoremap J jj
 nnoremap K kk
 
-nnoremap c <nop>
-nnoremap cj J
+nnoremap c <Nop>
+nnoremap cr :<C-u>Reloadrc<CR>
+nnoremap ce :<C-u>Editrc<CR>
 
 " -----------------------------
 " Window split / close shortcut.
