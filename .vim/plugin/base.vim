@@ -5,6 +5,11 @@ if &compatible
 	set nocompatible " viとの互換性をとらない(vim独自拡張)
 endif
 
+source ~/.vim/myscripts/pluginlist.vim
+source ~/.vim/keymap/basic.vim
+colorscheme molokai
+source ~/.vim/colors/yabasic.vim
+
 "---------------
 " 画面表示の設定
 "---------------

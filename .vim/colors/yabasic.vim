@@ -7,6 +7,7 @@ hi ZenkakuSpace cterm=underline ctermfg=lightblue guibg=darkgray
 match ZenkakuSpace /　/
 
 hi Comment ctermfg=cyan
+hi PreProc ctermfg=magenta
 hi NonText ctermfg=blue
 hi PreProc ctermfg=magenta
 hi Search term=reverse ctermfg=white ctermbg=blue
