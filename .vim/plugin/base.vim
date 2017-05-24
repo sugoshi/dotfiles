@@ -5,11 +5,6 @@ if &compatible
 	set nocompatible " viとの互換性をとらない(vim独自拡張)
 endif
 
-source ~/.vim/myscripts/pluginlist.vim
-source ~/.vim/keymap/basic.vim
-colorscheme molokai
-source ~/.vim/colors/yabasic.vim
-
 "---------------
 " 画面表示の設定
 "---------------
@@ -63,7 +58,7 @@ set sidescroll=1               " 左右スクロールは一文字づつ行う
 "-----------------------
 " ファイル処理関連の設定
 "-----------------------
-
+filetype plugin indent on
 set textwidth=0 " 自動改行の幅（0で無効）
 set autoread   "外部でファイルに変更がされた場合は読みなおす
 set confirm    " 保存されていないファイルがあるときは終了前に保存確認
