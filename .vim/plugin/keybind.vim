@@ -3,8 +3,8 @@ nnoremap O O<ESC>
 nnoremap t 0i<TAB><ESC>
 nnoremap T 0x
 
-nnoremap J jj
-nnoremap K kk
+nnoremap J <C-f>
+nnoremap K <C-b>
 
 nnoremap c <Nop>
 nnoremap cr :<C-u>Reloadrc<CR>
