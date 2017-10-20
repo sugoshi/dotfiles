@@ -76,6 +76,8 @@ set viminfo= " 履歴情報などの保存先
 set noundofile " アンドゥファイルを作らない
 "set undodir=
 
+set nofixeol
+
 "----------------------
 " エンコーディング関連
 "----------------------
