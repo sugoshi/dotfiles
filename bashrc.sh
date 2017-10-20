@@ -1,6 +1,7 @@
 # .bashrc
 
 script_dir="$(cd "$(dirname "${BASH_SOURCE:-$0}")"; pwd)"
+dotfiles_bashrc="1"
 
 # User specific aliases and functions
 if [ -f $script_dir/bash_aliases.sh ]; then
