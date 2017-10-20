@@ -1,14 +1,16 @@
 # .bash_profile
 
+script_dir="$(cd "$(dirname "${BASH_SOURCE:-$0}")"; pwd)"
+
 # Get the aliases and functions
-if [ -f ~/.bashrc ]; then
-	. ~/.bashrc
+if [ -f $script_dir/.bashrc ]; then
+	. $script_dir/.bashrc
 fi
 
 # User specific environment and startup programs
+export EDITOR='vi'
+export HISTSIZE=1000
+export LESS='--QUIET --no-init -M'
+export LESSCHARSET='utf-8'
+export PS1='\[\e[32m\]\u@\h\[\e[0m\] \[\e[33m\]\w\[\e[0m\]\n\$ '
 
-PATH=$PATH:$HOME/bin
-PS1='\[\e[36m\]\W \$\[\e[0m\] '
-
-export PATH
-unset USERNAME
