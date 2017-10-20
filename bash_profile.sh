@@ -3,8 +3,8 @@
 script_dir="$(cd "$(dirname "${BASH_SOURCE:-$0}")"; pwd)"
 
 # Get the aliases and functions
-if [ -f $script_dir/bashrc ]; then
-	. $script_dir/bashrc
+if [ -f $script_dir/bashrc.sh ]; then
+	. $script_dir/bashrc.sh
 fi
 
 # User specific environment and startup programs

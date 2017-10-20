@@ -1,5 +1,12 @@
 # .bashrc
 
+script_dir="$(cd "$(dirname "${BASH_SOURCE:-$0}")"; pwd)"
+
+# User specific aliases and functions
+if [ -f $script_dir/bash_aliases.sh ]; then
+	. $script_dir/bash_aliases.sh
+fi
+
 # User specific aliases and functions
 function pss {
 	ps $@ | tail -n +2
