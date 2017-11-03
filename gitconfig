@@ -4,10 +4,15 @@
 	br = branch
 	co = checkout
 	st = status
-	logs = log --oneline --all
-	log1 = log -n 1
+	unstage = "reset HEAD"
+
+	logf = "log --name-status"
+	; 履歴をグラフ表示
+	logg = "log --oneline --decorate --graph"
+	; 履歴を簡潔に表示
+	logs = "!git --no-pager log --all -n15 --oneline --decorate"
+	logn = "!git --no-pager log --all -n15 --pretty=tformat:'%C(yellow)%an%C(auto)%d%C(reset) %s'"
+
 	; authoreを変更する
 	chauthor = "!f() { git filter-branch -f --env-filter \"GIT_AUTHOR_NAME='$1'; GIT_AUTHOR_EMAIL='$2'; GIT_COMMITTER_NAME='$1'; GIT_COMMITTER_EMAIL='$2'; HEAD; }; f"
-	logg = log --oneline --decorate --graph
-	diffc = diff --cached
 	; ステージング済みの変更を見る
