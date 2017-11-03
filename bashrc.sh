@@ -19,6 +19,14 @@ if [ "$OS" = "Windows_NT" ]; then
 		shift
 		$cmd $@ 1> >(iconv -cs -f cp932 -t utf-8) 2> >(iconv -cs -f cp932 -t utf-8)
 	)
+	function winopen() {
+		if [ $# -eq 0 ]; then
+			target="`pwd -W`"
+		else
+			target="$1"
+		fi
+		cmd /C "start $target"
+	}
 fi
 
 function share_history {
