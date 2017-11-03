@@ -1,10 +1,13 @@
 
 [alias]
+	; 省略
 	br = branch
 	co = checkout
 	st = status
 	logs = log --oneline --all
 	log1 = log -n 1
+	; authoreを変更する
 	chauthor = "!f() { git filter-branch -f --env-filter \"GIT_AUTHOR_NAME='$1'; GIT_AUTHOR_EMAIL='$2'; GIT_COMMITTER_NAME='$1'; GIT_COMMITTER_EMAIL='$2'; HEAD; }; f"
 	logg = log --oneline --decorate --graph
 	diffc = diff --cached
+	; ステージング済みの変更を見る
