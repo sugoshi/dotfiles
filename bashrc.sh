@@ -35,3 +35,6 @@ function share_history {
 	history -r
 }
 PROMPT_COMMAND='share_history'
+HISTCONTROL=ignoreboth
+HISTIGNORE='?:??:???:exit:bash'
+HISTTIMEFORMAT='%F %T '
