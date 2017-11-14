@@ -11,7 +11,7 @@
 	; 履歴をグラフ表示
 	logg = "log --oneline --decorate --graph"
 	; 履歴を簡潔に表示
-	logs = "!git --no-pager log --all -n15 --oneline --decorate"
+	logs = "!git --no-pager log --all --oneline --decorate"
 	logn = "!git --no-pager log --all -n15 --pretty=tformat:'%C(yellow)%an%C(auto)%d%C(reset) %s'"
 
 	; authoreを変更する

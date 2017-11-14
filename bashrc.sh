@@ -17,7 +17,7 @@ if [ "$OS" = "Windows_NT" ]; then
 	function wincmd() (
 		cmd=$1
 		shift
-		$cmd $@ 1> >(iconv -cs -f cp932 -t utf-8) 2> >(iconv -cs -f cp932 -t utf-8)
+		$cmd $@ |& iconv -cs -f cp932 -t utf-8
 	)
 	function winopen() {
 		if [ $# -eq 0 ]; then
