@@ -33,8 +33,3 @@ nnoremap sJ <C-w>J
 nnoremap sK <C-w>K
 nnoremap sL <C-w>L
 nnoremap sH <C-w>H
-
-"call submode#enter_with('resizewin', 'n', '', 's.', '<C-w>>')
-
-" A shortcut to call VimShell.
-nnoremap sc :<C-u>VimShell<CR>
