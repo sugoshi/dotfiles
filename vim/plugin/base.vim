@@ -10,13 +10,13 @@ endif
 "---------------
 
 set number         " 行番号を表示する
-set cmdheight=2    " メッセージ表示欄を2行確保
+set cmdheight=1    " メッセージ表示欄を2行確保
 set cursorline     " カーソル行の背景色を変える
 
 set nocursorcolumn   " カーソル位置のカラムの背景色を変える
 
 set laststatus=2   " ステータス行を常に表示
-set statusline=[%n]%f%m%r%h%w\%=%y\[%{&ff}]\[%{&fileencoding}]\[L:%l/%L]\[C:%c%V]
+set statusline=%n,%f%M%R%H%W\%=%Y,%{&ff},%{&fileencoding},%l/%L,%c-%v
 
 set list           " 不可視文字を表示
 " 不可視文字の表示記号指定
