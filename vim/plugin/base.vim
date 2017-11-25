@@ -41,10 +41,6 @@ augroup vimrc_change_cursorline_color
 	autocmd InsertLeave * hi CursorLineNr ctermbg=blue
 augroup END
 
-" Graphic setting of VimShell
-let g:vimshell_prompt_expr = 'getcwd()." > "'
-let g:vimshell_prompt_pattern = '^\f\+ > '
-
 "-----------------------
 " カーソル移動関連の設定
 "-----------------------
