@@ -1,7 +1,7 @@
 nnoremap <Leader>o o<Esc>
 nnoremap <leader>O O<ESC>
-nnoremap <Tab> V>
-nnoremap <Leader><Tab> V<
+nnoremap <Leader>> V>
+nnoremap <Leader>< V<
 
 nnoremap J <C-f>
 nnoremap K <C-b>
