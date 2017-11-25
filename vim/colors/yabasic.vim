@@ -18,3 +18,6 @@ hi CursorLine NONE
 hi CursorColumn ctermfg=black
 hi CursorLineNr ctermbg=blue
 hi MatchParen term=reverse ctermfg=white ctermbg=red
+
+hi Folded gui=bold term=standout ctermbg=yellow ctermfg=black guibg=yellow guifg=black
+hi FoldColumn gui=bold term=standout ctermbg=yellow ctermfg=black guibg=yellow guifg=black

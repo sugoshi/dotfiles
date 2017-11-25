@@ -1,14 +1,16 @@
-nnoremap o o<ESC>
-nnoremap O O<ESC>
-nnoremap t 0i<TAB><ESC>
-nnoremap T 0x
+nnoremap <Leader>o o<Esc>
+nnoremap <leader>O O<ESC>
+nnoremap <Tab> V>
+nnoremap <Leader><Tab> V<
 
 nnoremap J <C-f>
 nnoremap K <C-b>
 
-nnoremap c <Nop>
-nnoremap cr :<C-u>Reloadrc<CR>
-nnoremap ce :<C-u>Editrc<CR>
+nnoremap <Leader>r :<C-u>Reloadrc<CR>
+nnoremap <Leader>e :<C-u>Editrc<CR>
+
+nnoremap <Leader>c :<C-u>set fo+=ro<CR>
+nnoremap <Leader>C :<C-u>set fo-=ro<CR>
 
 " -----------------------------
 " Window split / close shortcut.
