@@ -16,7 +16,7 @@ set cursorline     " カーソル行の背景色を変える
 set nocursorcolumn   " カーソル位置のカラムの背景色を変える
 
 set laststatus=2   " ステータス行を常に表示
-set statusline=%f%m%r%h%w\%=%y\[%{&ff}]\[%{&fileencoding}]\[L:%l/%L]
+set statusline=%f%m%r%h%w\%=%y\[%{&ff}]\[%{&fileencoding}]\[L:%l/%L][C:%c]
 
 set list           " 不可視文字を表示
 " 不可視文字の表示記号指定
