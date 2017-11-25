@@ -6,8 +6,7 @@ nnoremap K <C-b>
 
 nnoremap <Leader>r :<C-u>source %<CR>:echom "loaded current buffer"<CR>
 nnoremap <Leader>h :<C-u>noh<CR>
-nnoremap <Leader>c :<C-u>set fo+=ro<CR>
-nnoremap <Leader>C :<C-u>set fo-=ro<CR>
+nnoremap <Leader>c :<C-u>call ToggleFileOption()<CR>
 
 " -----------------------------
 " Window split / close shortcut.
