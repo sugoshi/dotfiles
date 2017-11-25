@@ -10,7 +10,7 @@ fi
 # User specific environment and startup programs
 export EDITOR='vi'
 export HISTSIZE=1000
-export LESS='--QUIET --no-init -M'
+export LESS='--QUIET --no-init -M -R'
 export LESSCHARSET='utf-8'
 export PS1='\[\e[32m\]\u@\h\[\e[0m\] \[\e[33m\]\w\[\e[0m\]\n\$ '
 
