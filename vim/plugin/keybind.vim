@@ -4,8 +4,7 @@ nnoremap <leader>O O<ESC>
 nnoremap J <C-f>
 nnoremap K <C-b>
 
-nnoremap <Leader>r :<C-u>Reloadrc<CR>
-nnoremap <Leader>e :<C-u>Editrc<CR>
+nnoremap <Leader>r :<C-u>source %<CR>:echom "loaded current buffer"<CR>
 nnoremap <Leader>h :<C-u>noh<CR>
 nnoremap <Leader>c :<C-u>set fo+=ro<CR>
 nnoremap <Leader>C :<C-u>set fo-=ro<CR>
