@@ -37,4 +37,5 @@ nnoremap sO <C-w>_
 nnoremap sA <C-w>\|
 nnoremap s= <C-w>=
 
-nnoremap st :<C-u>tabnew<CR>
+nnoremap st :<C-u>tabnew %<CR>
+nnoremap sd :<C-u>bd<CR>
