@@ -7,4 +7,3 @@ function! ToggleFileOption()
 	echom 'fileoption=' . &fo
 endfunction
 
-command! -nargs=0 Editrc edit $MYVIMRC
