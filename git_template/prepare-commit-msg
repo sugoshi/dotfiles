@@ -1,0 +1,10 @@
+#!/bin/sh
+
+if [ "$2" == "" ]; then
+	cat <<EOF >"$1"
+
+# name  : `git config --local user.name`
+# email : `git config --local user.email`
+# branch: `git symbolic-ref HEAD | sed 's#.*/##'`
+EOF
+fi
