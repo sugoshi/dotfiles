@@ -31,12 +31,12 @@ nnoremap sJ <C-w>J
 nnoremap sK <C-w>K
 nnoremap sL <C-w>L
 nnoremap sH <C-w>H
-nnoremap so <C-w>+
-nnoremap sd <C-w>-
-nnoremap sa <C-w>>
-nnoremap si <C-w><
-nnoremap sO <C-w>_
-nnoremap sA <C-w>\|
+nnoremap s+ <C-w>+
+nnoremap s- <C-w>-
+nnoremap s> <C-w>>
+nnoremap s< <C-w><
+nnoremap sH <C-w>_
+nnoremap sW <C-w>\|
 nnoremap s= <C-w>=
 
 nnoremap st :<C-u>tabnew %<CR>
