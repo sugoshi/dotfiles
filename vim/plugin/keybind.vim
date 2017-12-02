@@ -8,6 +8,7 @@ nnoremap <Leader>r :<C-u>source %<CR>:echom "loaded current buffer"<CR>
 nnoremap <Leader>h :<C-u>noh<CR>
 nnoremap <Leader>c :<C-u>call ToggleFileOption()<CR>
 nnoremap <Leader>bd :<C-u>call DeleteHiddenBuffers()<CR>
+nnoremap <Leader>br :<C-u>checktime<CR>
 
 " -----------------------------
 " Window split / close shortcut.
