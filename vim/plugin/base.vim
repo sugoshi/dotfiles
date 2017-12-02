@@ -14,6 +14,7 @@ set cmdheight=1    " メッセージ表示欄を2行確保
 set cursorline     " カーソル行の背景色を変える
 
 set nocursorcolumn   " カーソル位置のカラムの背景色を変える
+set colorcolumn=80 " 80列目をハイライトする
 
 set laststatus=2   " ステータス行を常に表示
 set statusline=%n,%f%M%R%H%W\%=%Y,%{&ff},%{&fileencoding},%l/%L,%c-%v
