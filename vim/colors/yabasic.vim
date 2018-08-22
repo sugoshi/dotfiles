@@ -33,3 +33,11 @@ hi DiffAdd ctermfg=black ctermbg=green
 hi DiffChange ctermfg=black ctermbg=green
 hi DiffDelete ctermfg=white ctermbg=red
 hi DiffText ctermfg=black ctermbg=white
+
+hi StatusLine term=bold,reverse cterm=bold ctermfg=black ctermbg=yellow
+	\ gui=bold guifg=black guibg=yellow
+hi StatusLineNC term=reverse cterm=reverse gui=reverse
+hi TabLine term=underline cterm=underline ctermfg=white ctermbg=gray
+	\ gui=underline guifg=white guibg=gray
+hi TabLineSel term=bold cterm=bold ctermfg=black ctermbg=yellow
+	\ gui=bold guifg=black guibg=yellow
