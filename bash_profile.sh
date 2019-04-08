@@ -9,6 +9,7 @@ fi
 
 # User specific environment and startup programs
 export EDITOR='vim'
+export PAGER='less'
 export HISTSIZE=1000
 export LESS='--QUIET --no-init -M -R'
 export LESSCHARSET='utf-8'
