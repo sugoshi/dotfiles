@@ -1,0 +1,11 @@
+colorscheme yabasic
+set mouse-=a
+set gfn=MyricaM_M:h14:cDEFAULT
+set gfw=MyricaM_M:h14:cSHIFTJIS
+set guioptions-=e
+set guioptions-=m
+set guioptions-=T
+set guioptions-=b
+set guicursor=a:blinkon0
+set showtabline=2
+set visualbell t_vb=

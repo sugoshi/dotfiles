@@ -1,0 +1,9 @@
+filetype off
+filetype plugin indent off
+set runtimepath+=/dotfiles/vim
+set runtimepath+=/dotfiles/vim/after
+
+let mapleader="\<Space>"
+set t_Co=256
+colorscheme yabasic
+filetype plugin indent on
