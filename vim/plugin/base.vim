@@ -120,6 +120,8 @@ set clipboard=unnamed,unnamedplus
 set shellslash
 " インサートモードから抜けると自動的にIMEをオフにする
 "set iminsert=2
+set nomodeline
+set modelines=0
 
 "---------------------
 " コマンドラインの設定
