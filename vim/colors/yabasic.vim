@@ -8,7 +8,8 @@ match ZenkakuSpace /　/
 
 hi Comment ctermfg=cyan guifg=cyan
 hi Error term=reverse ctermfg=white ctermbg=red guifg=white guibg=red
-hi LineNr ctermfg=yellow guifg=yellow
+hi Identifier ctermfg=yellow guifg=yellow
+hi LineNr ctermfg=gray guifg=gray
 hi NonText ctermfg=darkcyan guifg=darkcyan guibg=black
 hi Normal guifg=white guibg=black
 hi PreProc ctermfg=lightmagenta guifg=lightmagenta
@@ -34,10 +35,10 @@ hi DiffChange ctermfg=black ctermbg=green
 hi DiffDelete ctermfg=white ctermbg=red
 hi DiffText ctermfg=black ctermbg=white
 
-hi StatusLine term=bold,reverse cterm=bold ctermfg=black ctermbg=yellow
-	\ gui=bold guifg=black guibg=yellow
+hi StatusLine term=bold,reverse cterm=bold ctermfg=black ctermbg=gray
+	\ gui=bold guifg=black guibg=lightgray
 hi StatusLineNC term=reverse cterm=reverse gui=reverse
 hi TabLine term=underline cterm=underline ctermfg=white ctermbg=gray
-	\ gui=underline guifg=white guibg=gray
+	\ gui=underline guifg=white guibg=black
 hi TabLineSel term=bold cterm=bold ctermfg=black ctermbg=yellow
-	\ gui=bold guifg=black guibg=yellow
+	\ gui=bold guifg=black guibg=lightgray
