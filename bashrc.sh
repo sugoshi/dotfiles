@@ -1,7 +1,6 @@
 # .bashrc
 
 script_dir="$(cd "$(dirname "${BASH_SOURCE:-$0}")"; pwd)"
-dotfiles_bashrc="1"
 
 # User specific aliases and functions
 if [ -f $script_dir/bash_aliases.sh ]; then
@@ -9,6 +8,10 @@ if [ -f $script_dir/bash_aliases.sh ]; then
 fi
 
 # User specific aliases and functions
+alias ls='\ls -F -L --color=auto'
+alias ll='\ls -F -l --color=auto'
+alias relogin='exec $SHELL -l'
+alias vi='vim'
 function pss {
 	ps $@ | tail -n +2
 }
@@ -35,6 +38,7 @@ function share_history {
 	history -r
 }
 PROMPT_COMMAND='share_history'
+HISTSIZE=1000
 HISTCONTROL=ignoreboth
 HISTIGNORE='?:??:???:exit:bash'
 HISTTIMEFORMAT='%F %T '
