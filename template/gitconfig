@@ -1,3 +1,5 @@
 [core]
     filemode = false
     ignorecase = false
+[include]
+    path = /dotfiles/gitconfig
