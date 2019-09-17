@@ -114,8 +114,8 @@ set nocindent     " 他の2つの方法よりも賢く動作し、設定する�
 
 " OSのクリップボードをレジスタ指定無しで Yank, Put 出来るようにする
 set clipboard=unnamed,unnamedplus
-" マウスの入力を受け付ける
-"set mouse=a
+" マウス入力
+set mouse-=a
 " Windows でもパスの区切り文字を / にする
 set shellslash
 " インサートモードから抜けると自動的にIMEをオフにする
