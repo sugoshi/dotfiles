@@ -2,8 +2,17 @@ filetype off
 filetype plugin indent off
 set runtimepath+=/dotfiles/vim
 set runtimepath+=/dotfiles/vim/after
+" git clone https://github.com/VundleVim/Vundle.vim.git
+"   ~/.vim/bundle/Vundle.vim
+" set runtimepath+=~/.vim/bundle/Vundle.vim
+
+" call vundle#begin()
+" Plugin 'vim-jp/vimdoc-ja'
+" Plugin 'szw/vim-tags'
+" call vundle#end()
 
 let mapleader="\<Space>"
 set t_Co=256
+set helplang=ja,en
 colorscheme yabasic
 filetype plugin indent on
