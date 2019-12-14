@@ -12,6 +12,13 @@ nnoremap <Leader>bd :<C-u>call DeleteHiddenBuffers()<CR>
 nnoremap <Leader>br :<C-u>checktime<CR>
 
 " -----------------------------
+"  tag jump
+" -----------------------------
+nnoremap <C-]> <C-]>zz
+" nnoremap <C-]> g<C-]>zz
+nnoremap <Leader>] :<C-u>tab split<CR>:exe("tag ".expand('<cword>'))<CR>zz
+
+" -----------------------------
 " Window split / close shortcut.
 " -----------------------------
 nnoremap ss :<C-u>sp<CR>
@@ -40,5 +47,5 @@ nnoremap sH <C-w>_
 nnoremap sW <C-w>\|
 nnoremap s= <C-w>=
 
-nnoremap st :<C-u>tabnew %<CR>
+nnoremap st :<C-u>tab split<CR>
 nnoremap sd :<C-u>bd<CR>
