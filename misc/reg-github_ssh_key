@@ -1,0 +1,25 @@
+#!/bin/sh
+# 参考: https://qiita.com/yusuke_konishi/items/6fa51372a895c831ab2b
+
+# usage
+_usage() {
+	echo 'usage:'
+	echo "$0 -u USER -t TITLE -f PUBLIC_KEY_FILE"
+	exit 1
+}
+
+while getopts u:t:f: OPT; do
+	case $OPT in
+		'u') arg_user=$OPTARG;;
+		't') arg_title=$OPTARG;;
+		'f') arg_file=$OPTARG;;
+	:|\?) _usage;;
+	esac
+done
+
+# check arguments
+[ -n "$arg_user" ] || _usage
+[ -n "$arg_title" ] || _usage
+[ -n "$arg_file" ] || _usage
+
+curl -u "$arg_user" --data '{"title":"'"$arg_title"'","key":"'"$(cat "$arg_file")"'"}' https://api.github.com/user/keys
