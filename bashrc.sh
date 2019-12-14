@@ -8,10 +8,6 @@ if [ -f $script_dir/bash_aliases.sh ]; then
 fi
 
 # User specific aliases and functions
-alias ls='\ls -F -L --color=auto'
-alias ll='\ls -F -l --color=auto'
-alias relogin='exec $SHELL -l'
-alias vi='vim'
 function pss {
 	ps $@ | tail -n +2
 }
