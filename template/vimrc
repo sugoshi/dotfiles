@@ -1,7 +1,9 @@
 filetype off
 filetype plugin indent off
-set runtimepath+=/dotfiles/vim
-set runtimepath+=/dotfiles/vim/after
+if has('vim_starting')
+  set runtimepath+=/dotfiles/vim
+  set runtimepath+=/dotfiles/vim/after
+endif
 " git clone https://github.com/VundleVim/Vundle.vim.git
 "   ~/.vim/bundle/Vundle.vim
 " set runtimepath+=~/.vim/bundle/Vundle.vim
@@ -9,9 +11,14 @@ set runtimepath+=/dotfiles/vim/after
 " call vundle#begin()
 " Plugin 'vim-jp/vimdoc-ja'
 " Plugin 'szw/vim-tags'
+" Plugin 'kamichidu/vim-edit-properties'
+" Plugin 'PProvost/vim-ps1'
 " call vundle#end()
 
-let mapleader="\<Space>"
+let g:mapleader="\<Space>"
+let g:maplocalleader = "\\"
+nnoremap <Leader> <nop>
+
 set t_Co=256
 set helplang=ja,en
 colorscheme yabasic
