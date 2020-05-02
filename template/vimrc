@@ -23,3 +23,7 @@ set t_Co=256
 set helplang=ja,en
 colorscheme yabasic
 filetype plugin indent on
+
+if has("autocmd")
+  " autocmd FileType java setlocal sw=4 sts=4 ts=4 et
+endif
