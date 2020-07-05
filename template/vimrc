@@ -4,10 +4,11 @@ if has('vim_starting')
   set runtimepath+=/dotfiles/vim
   set runtimepath+=/dotfiles/vim/after
 endif
-" git clone https://github.com/VundleVim/Vundle.vim.git
-"   ~/.vim/bundle/Vundle.vim
-" set runtimepath+=~/.vim/bundle/Vundle.vim
 
+" Vundle settings
+" git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+" git clone https://github.com/VundleVim/Vundle.vim.git (Join-Path $env:USERPROFILE -ChildPath /.vim/bundle/Vundle.vim)
+" set runtimepath+=~/.vim/bundle/Vundle.vim
 " call vundle#begin()
 " Plugin 'vim-jp/vimdoc-ja'
 " Plugin 'szw/vim-tags'
