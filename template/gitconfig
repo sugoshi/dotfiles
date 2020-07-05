@@ -1,5 +1,7 @@
 [core]
     filemode = false
     ignorecase = false
+    autocrlf = false
+    # sshCommand = 'C:\\Windows\\System32\\OpenSSH\\ssh.exe'
 [include]
     path = /dotfiles/gitconfig
