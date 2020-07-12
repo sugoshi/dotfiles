@@ -1,0 +1,8 @@
+Host github-kw8r34
+    HostName github.com
+    User git
+    # IdentityFile ~/.ssh/id_rsa_github_
+Host github-sugoshi
+    HostName github.com
+    User git
+    # IdentityFile ~/.ssh/id_rsa_github_
