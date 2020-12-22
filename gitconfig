@@ -1,17 +1,21 @@
-
+[core]
+	quotepath = false
+	autocrlf = false
+	filemode = false
 [alias]
 	; 省略
 	br = branch
 	cm = commit
 	co = checkout
 	st = status
-	unstage = "reset HEAD"
+	sw = switch
 
 	logf = "log --name-status"
 	; 履歴をグラフ表示
 	logg = "log --oneline --decorate --graph"
+	logga = "logg --all"
 	; 履歴を簡潔に表示
-	logs = "!git --no-pager log --all --oneline --decorate"
+	logs = "!git --no-pager log --all -n15 --oneline --decorate"
 	logn = "!git --no-pager log --all -n15 --pretty=tformat:'%C(yellow)%an%C(auto)%d%C(reset) %s'"
 
 	; authoreを変更する
@@ -20,3 +24,5 @@
 	diffc = "diff --cached"
 	; showでtextconvを有効化
 	showtc = "show --textconv"
+	; マージ済みブランチを一覧化
+	ls-brm = "!f() { git branch --merged | grep -v '\\*\\|develop\\|master\\|release\\|main'; }; f"
