@@ -1,6 +1,7 @@
 [core]
 	quotepath = false
 	autocrlf = false
+	safecrlf = true
 	filemode = false
 [alias]
 	; 省略
