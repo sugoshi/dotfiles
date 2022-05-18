@@ -24,7 +24,7 @@ hi CursorLineNr ctermfg=yellow ctermbg=blue guifg=yellow guibg=blue
 hi MatchParen term=reverse ctermfg=white ctermbg=red guifg=white guibg=red
 
 hi Folded gui=bold term=standout ctermbg=yellow ctermfg=black
-	\ guibg=yellow guifg=black
+	\ guibg=DarkYellow guifg=black
 hi FoldColumn gui=bold term=standout ctermbg=yellow ctermfg=black
 	\ guibg=yellow guifg=black
 
