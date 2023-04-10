@@ -10,6 +10,8 @@ nnoremap <Leader>c :<C-u>call ToggleFileOption()<CR>
 nnoremap <Leader>y :<C-u>SyntaxInfo<CR>
 nnoremap <Leader>bd :<C-u>call DeleteHiddenBuffers()<CR>
 nnoremap <Leader>br :<C-u>checktime<CR>
+nnoremap <Leader>n :<C-u>cnext<CR>
+nnoremap <Leader>N :<C-u>cprevious<CR>
 
 " -----------------------------
 "  tag jump
